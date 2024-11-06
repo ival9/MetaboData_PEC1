@@ -68,9 +68,11 @@ hist(metabolic_data$AGE, xlab= "Edad", ylab= "Frecuencia")
 max(metabolic_data$AGE)
 min(metabolic_data$AGE)
 
-#Quitar columnas con NAs, no numéricas y con solo ceros
-
+#Quito las primeras columnas ya que no son sobre datos metabólicos
 subset_data <- metabolic_data[, 10:696]
+
+#Quito columnas con NAs, no numéricas y con solo ceros
+
 
 #Quitar columnas no numéricas
 numeric_data <- subset_data[, sapply(subset_data, is.numeric)]
@@ -124,6 +126,5 @@ BiocManager::install("ComplexHeatmap")
 
 
 matrix <- as.matrix(numeric_data)
-heatmap(matrix, scale = "none")
-
+heatmap(matrix, scale = "column")
 

@@ -7,3 +7,6 @@ SummarizedExperiment.rda --> SummarizedExperiment de los datos, el código se pu
 Metadata.rmd --> metadatos del dataset
 
 Código_exploración_datos.R --> código en R usado para explorar los datos
+
+
+Valdivia_Callejon_Irene_PEC1_informe.pdf --> Informe sobre los pasos usados para explorar los datos y conclusiones
